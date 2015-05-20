@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Base.Rbt" parent="@style/Theme.AppCompat">
+        <item name="actionBarStyle">@style/Widget.Rbt.ActionBar</item>
+        <item name="windowActionBar">true</item>
+    </style>
+
+    <style name="Theme.Rbt" parent="@style/Theme.Base.Rbt">
+    </style>
+
+    <style name="Widget.Rbt.ActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="background">@drawable/style_header_btn</item>
+    </style>
+</resources>

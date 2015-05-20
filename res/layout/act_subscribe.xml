@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="100"
+              android:background="@color/bluish_grey">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_weight="90">
+
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@color/white"
+                      android:orientation="vertical">
+        
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:weightSum="100"
+                      android:padding="10dp">
+
+            <TextView android:layout_width="fill_parent"
+                      style="@style/big_text"
+                      android:layout_weight="40"
+                      android:focusable="true"
+                      android:focusableInTouchMode="true"
+                      android:text="@string/sub_stat"
+                      />
+
+            <TextView android:layout_width="fill_parent"
+                      style="@style/big_text"
+                      android:id="@+id/subscription_status"
+                      android:background="@drawable/style_btn_green_normal"
+                      android:layout_weight="60"
+                      android:gravity="center"
+                      android:textColor="@color/white"
+                      android:text="@string/sub_active" />
+
+                      </LinearLayout>
+
+            <View android:layout_width="fill_parent"
+                  android:layout_height="0.5dp"
+                  android:background="@color/trans_black"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/typeParent"
+                      android:visibility="visible"
+                      android:weightSum="100"
+                      android:padding="10dp">
+
+            <TextView android:layout_width="fill_parent"
+                      style="@style/big_text"
+                      android:layout_weight="40"
+                      android:text="@string/sub_type"
+                    />
+
+            <TextView android:layout_width="fill_parent"
+                      style="@style/big_text"
+                      android:id="@+id/subscription_type"
+                      android:background="@drawable/style_btn_yellow_normal"
+                      android:layout_weight="60"
+                      android:gravity="center"
+                      android:textColor="@color/white"
+                      android:text="@string/sub_days" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/subscribeParent"
+                      android:visibility="visible"
+                      android:padding="8dp"
+                      android:orientation="vertical">
+
+            <TextView android:layout_width="fill_parent"
+                      style="@style/big_text"
+                      android:padding="10dp"
+                      android:text="@string/sub_resubscribe" />
+
+            <EditText style="@style/editText"
+                      android:id="@+id/PinCode"
+                      android:inputType="textPersonName"
+                      android:hint="@string/hint_enter_pin"/>
+
+            <Button style="@style/blue_button"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="actionSubscribe"
+                    android:text="@string/sub_subscribe"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="10">
+
+        <include layout="@layout/footer_menu" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bluish_grey"
+              android:padding="20dp">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:background="@drawable/elem_messages_selected"
+                  android:minHeight="100dp"
+                  android:padding="10dp">
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/accept_terms"
+                  android:textColor="@color/grey"
+                  android:typeface="sans"
+                  android:id="@+id/message"
+                  android:textSize="@dimen/def_btn_txt_size"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/date"
+                  android:gravity="right"
+                  android:layout_marginTop="8dp"
+                  android:text="@string/sub_days"
+                  android:textColor="@color/trans_black"
+                  android:typeface="sans"
+                  android:textSize="14sp"/>
+
+    </LinearLayout>
+
+</ScrollView>

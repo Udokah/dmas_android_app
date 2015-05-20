@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="match_parent"
+                      android:layout_height="fill_parent"
+                      android:weightSum="100"
+                      android:gravity="center"
+                      android:orientation="horizontal">
+
+            <ImageButton style="@style/footer_menu_btn"
+                         android:id="@+id/homeBtn"
+                         android:clickable="true"
+                         android:onClick="navHome"
+                         android:layout_weight="25"
+                         android:contentDescription="@string/cont_desc_news"
+                         android:src="@drawable/ic_menu_home"/>
+
+            <ImageButton style="@style/footer_menu_btn"
+                         android:id="@+id/messagesBtn"
+                         android:onClick="navMessages"
+                         android:layout_weight="25"
+                         android:contentDescription="@string/cont_desc_msg"
+                         android:src="@drawable/ic_menu_message"/>
+
+            <ImageButton style="@style/footer_menu_btn"
+                         android:id="@+id/subscribeBtn"
+                         android:onClick="navSubscribe"
+                         android:layout_weight="25"
+                         android:contentDescription="@string/cont_desc_subsc"
+                         android:src="@drawable/ic_menu_subscribe"/>
+
+            <ImageButton style="@style/footer_menu_btn"
+                         android:id="@+id/settingsBtn"
+                         android:onClick="navSettings"
+                         android:contentDescription="@string/cont_desc_settings"
+                         android:layout_weight="25"
+                         android:src="@drawable/ic_menu_settings"/>
+
+        </LinearLayout>

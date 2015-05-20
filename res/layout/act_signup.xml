@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@color/bluish_grey"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="10dp"
+                  android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:weightSum="100"
+                      android:gravity="center"
+                      android:orientation="horizontal">
+
+        <EditText style="@style/editText"
+                  android:id="@+id/firstname"
+                  android:layout_weight="50"
+                  android:inputType="textPersonName"
+                  android:hint="@string/hint_fname"/>
+
+        <EditText style="@style/editText"
+                  android:id="@+id/lastname"
+                  android:layout_weight="50"
+                  android:inputType="textPersonName"
+                  android:layout_marginLeft="-3dp"
+                  android:hint="@string/hint_lname"/>
+        </LinearLayout>
+
+        <EditText style="@style/editText"
+                  android:id="@+id/email"
+                  android:layout_marginTop="-3dp"
+                  android:inputType="textEmailAddress"
+                  android:hint="@string/hint_email"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:weightSum="100"
+                      android:gravity="center"
+                      android:layout_marginTop="-3dp"
+                      android:orientation="horizontal">
+
+            <Spinner style="@style/custom_spinner"
+                     android:id="@+id/code"
+                     android:entries="@array/call_codes"
+                     android:layout_weight="70"/>
+
+            <EditText style="@style/editText"
+                      android:id="@+id/phone"
+                      android:layout_weight="30"
+                      android:layout_marginLeft="-3dp"
+                      android:inputType="phone"
+                      android:hint="@string/hint_mobile"/>
+        </LinearLayout>
+
+        <EditText style="@style/editText"
+                  android:id="@+id/password"
+                  android:layout_marginTop="-3dp"
+                  android:inputType="textPassword"
+                  android:hint="@string/hint_password"/>
+
+        <Spinner style="@style/custom_spinner"
+                 android:id="@+id/country"
+                 android:entries="@array/countries_array"
+                 android:dropDownSelector="@android:drawable/spinner_dropdown_background"
+                 android:layout_marginTop="-3dp"
+                 android:tag="@string/country_prompt"
+                 android:prompt="@string/country_prompt"/>
+
+        <Button style="@style/green_button"
+                android:layout_marginTop="10dp"
+                android:text="@string/create_account"
+                android:onClick="doSignup"/>
+
+        <TextView style="@style/textview_normal"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginBottom="5dp"
+                  android:text="@string/accept_terms"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+</ScrollView>

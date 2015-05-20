@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="def_btn_txt_size">19sp</dimen>
+    <dimen name="def_btn_padding">10dp</dimen>
+
+    <dimen name="def_btn_radius">4dp</dimen>
+
+    <dimen name="edit_text_border">1dp</dimen>
+
+</resources>

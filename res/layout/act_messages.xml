@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="100"
+              android:background="@color/blue_lighter">
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="85">
+
+        <ListView android:layout_width="match_parent"
+                  android:id="@android:id/list"
+                  android:divider="@color/white_dim"
+                  android:dividerHeight="0.4sp"
+                  android:layout_height="fill_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="15">
+
+        <include layout="@layout/footer_menu" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

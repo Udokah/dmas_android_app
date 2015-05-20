@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/ListViewParent"
+              android:padding="9dp"
+              android:background="@drawable/widget_messages_list_blue">
+
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/message"
+              android:text="@string/widget_list_message"
+              android:textSize="17sp"
+              android:textColor="@color/black"
+              android:layout_marginBottom="1dp"
+              android:typeface="sans"/>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/time"
+              android:text="@string/widget_list_time"
+              android:typeface="sans"
+              android:textColor="@color/black"
+              android:gravity="left"
+              android:layout_marginBottom="1dp"
+              android:textSize="12sp"/>
+    </LinearLayout>
+
+</LinearLayout>

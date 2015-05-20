@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="big_text">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="footer_menu_btn">
+        <item name="android:padding">@dimen/def_btn_padding</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@drawable/style_footer_menu_btn</item>
+    </style>
+
+    <style name="textview_normal">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="action_bar_title">
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center_vertical|center_vertical</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:padding">@dimen/def_btn_padding</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/def_btn_txt_size</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="green_button" parent="ButtonStyle">
+        <item name="android:background">@drawable/style_btn_green</item>
+    </style>
+
+    <style name="blue_button" parent="ButtonStyle">
+        <item name="android:background">@drawable/style_btn_blue</item>
+    </style>
+
+    <style name="red_button" parent="ButtonStyle">
+        <item name="android:background">@drawable/style_btn_red</item>
+    </style>
+
+    <style name="yellow_button" parent="ButtonStyle">
+        <item name="android:background">@drawable/style_btn_yellow</item>
+    </style>
+
+    <style name="basic_input">
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:layout_height">49dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:textSize">@dimen/def_btn_txt_size</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="custom_spinner" parent="basic_input">
+        <item name="android:background">@android:drawable/btn_dropdown</item>
+    </style>
+
+    <style name="editText" parent="basic_input">
+        <item name="android:background">@android:drawable/edit_text</item>
+    </style>
+
+    <style name="Theme.WithColoredSpinners" parent="@android:style/Theme">
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerItem.DropDownItem</item>
+    </style>
+
+    <style name="SpinnerItem" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:background">@color/white_dim</item>
+        <item name="android:textSize">@dimen/def_btn_txt_size</item>
+        <item name="android:drawableRight">@android:drawable/arrow_down_float</item>
+        <item name="android:drawablePadding">4dp</item>
+    </style>
+
+    <style name="SpinnerItem.DropDownItem" parent="@android:style/Widget.DropDownItem.Spinner">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:background">@color/white_dim</item>
+        <item name="android:textSize">@dimen/def_btn_txt_size</item>
+        <item name="android:drawablePadding">4dp</item>
+    </style>
+
+
+    <style name="btnStyleBeige" parent="@android:style/Widget.Button">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.6</item>
+        <item name="android:background">@drawable/custom_btn_beige</item>
+        <item name="android:padding">10dip</item>
+    </style>
+
+
+</resources>
